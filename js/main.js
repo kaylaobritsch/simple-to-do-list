@@ -1,4 +1,6 @@
-$('form').on('submit', function () {
+$('form').on('submit', function (e) {
   var $listItem = $('#list-input').val();
-  $('#simple-list').append('<li>' + listItem + '</li>');
+
+  e.preventDefault();
+  $('#simple-list').append('<li>' + $listItem + '</li>');
 });
