@@ -1,5 +1,4 @@
-var $body = $('body');
-
-$('add-btn').on('click', function () {
-
+$('form').on('submit', function () {
+  var $listItem = $('#list-input').val();
+  $('#simple-list').append('<li>' + listItem + '</li>');
 });
